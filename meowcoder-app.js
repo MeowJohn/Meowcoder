@@ -18,7 +18,10 @@ meow.meowcoder.App = function ( ) {
   }
   
   function _decodeNow ( ) {
-    
+    var _decoder;
+    _decoder = new meowcoder.meow.Decoder();
+    _decoder.setText ( _textToTranslateField.val );
+    _resultField.val = _encoder.getTranslation ();
   }
   
 };
