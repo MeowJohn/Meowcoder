@@ -28,10 +28,13 @@ meow.meowcoder.Encoder = function ( ) {
   }
   
   function _getNextInput ( ) {
-    return something;
+    var _nextInput;
+    _nextInput = _text.charAt ( _currentCharacterIndex );
+    _currentCharacterIndex++;
+    return _currentCharacterIndex;
   }
   
-  function _getTranslationOf ( ) {
+  function _getTranslationOf ( _anInput ) {
     return something;
   }
 
