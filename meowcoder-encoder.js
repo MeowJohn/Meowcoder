@@ -15,4 +15,12 @@ meow.meowcoder.Encoder = function ( ) {
     return _result;
   };
 
+  function _areThereMoreResults ( ) {
+    return something;
+  }
+
+  function _getNextResult ( ) {
+    return something;
+  }
+
 };
