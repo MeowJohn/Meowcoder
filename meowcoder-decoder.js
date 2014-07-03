@@ -1,0 +1,3 @@
+meow.meowcoder.Decoder = function ( ) {
+
+};
