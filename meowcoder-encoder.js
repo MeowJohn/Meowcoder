@@ -9,6 +9,7 @@ meow.meowcoder.Encoder = function ( ) {
 
   _this.getTranslation = function ( ) {
     var _result;
+    _result = '';
     _currentCharacterIndex = 0;
     while ( _areThereMoreResults ( ) )
       _result += _getNextResult ( );
@@ -20,6 +21,17 @@ meow.meowcoder.Encoder = function ( ) {
   }
 
   function _getNextResult ( ) {
+    var _nextInput, _nextResult;
+    _nextInput = _getNextInput ( );
+    _nextResult = _getTranslationOf ( _nextInput );
+    return _nextResult;
+  }
+  
+  function _getNextInput ( ) {
+    return something;
+  }
+  
+  function _getTranslationOf ( ) {
     return something;
   }
 
