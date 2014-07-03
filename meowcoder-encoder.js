@@ -35,7 +35,10 @@ meow.meowcoder.Encoder = function ( ) {
   }
   
   function _getTranslationOf ( _anInput ) {
-    return something;
+    if ( meow.meowcoder.lang.hasOwnProperty ( _anInput ) )
+      return meow.meowcoder.lang[ _anInput ];
+    else
+      return _anInput;
   }
 
 };
