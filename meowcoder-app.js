@@ -13,7 +13,9 @@ meow.meowcoder.App = function ( ) {
   _decodeButton.onclick = _decodeNow;
   
   function _encodeNow ( ) {
-
+    var _result;
+    _result = _encoder.encode ( _textToTranslateField.val );
+    _resultField.val = _result;
   }
   
   function _decodeNow ( ) {
