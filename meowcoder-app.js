@@ -13,7 +13,7 @@ meow.meowcoder.App = function ( ) {
   function _encodeNow ( ) {
     var _encoder;
     _encoder = new meowcoder.meow.Encoder();
-    _encoder.setText ( __textToTranslateField.val );
+    _encoder.setText ( _textToTranslateField.val );
     _resultField.val = _encoder.getTranslation ( );
   }
   
