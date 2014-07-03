@@ -31,7 +31,7 @@ meow.meowcoder.Encoder = function ( ) {
     var _nextInput;
     _nextInput = _text.charAt ( _currentCharacterIndex );
     _currentCharacterIndex++;
-    return _currentCharacterIndex;
+    return _nextInput;
   }
   
   function _getTranslationOf ( _anInput ) {
