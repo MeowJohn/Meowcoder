@@ -1,9 +1,7 @@
 meow.meowcoder.App = function ( ) {
   
-  var _encoder, _decoder, _textToTranslateField, _resultField, _encodeButton, _decodeButton;
+  var _textToTranslateField, _resultField, _encodeButton, _decodeButton;
   
-  _encoder = new meow.meowcoder.Encoder();
-  _decoder = new meow.meowcoder.Decoder();
   _textToTranslateField = document.getElementById ( 'text-to-translate-field' );
   _resultField = document.getElementById ( 'result-field' );
   _encodeButton = document.getElementById ( 'encode-button' );
@@ -13,9 +11,10 @@ meow.meowcoder.App = function ( ) {
   _decodeButton.onclick = _decodeNow;
   
   function _encodeNow ( ) {
-    var _result;
-    _result = _encoder.encode ( _textToTranslateField.val );
-    _resultField.val = _result;
+    var _encoder;
+    _encoder = new meowcoder.meow.Encoder();
+    _encoder.setText ( __textToTranslateField.val );
+    _resultField.val = _encoder.getTranslation ( );
   }
   
   function _decodeNow ( ) {
