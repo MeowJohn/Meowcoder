@@ -1,7 +1,7 @@
 meow.meowcoder.lang = {
 
-  'a': 'mep',
-  'b': 'mawp',
-  'c': 'mewp'
+  'a': 'eo',
+  'b': 'mr',
+  'c': 'mw'
 
 }
