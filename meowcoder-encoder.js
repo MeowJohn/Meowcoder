@@ -16,7 +16,7 @@ meow.meowcoder.Encoder = function ( ) {
   };
 
   function _areThereMoreResults ( ) {
-    return something;
+    return _currentCharacterIndex < _text.length;
   }
 
   function _getNextResult ( ) {
