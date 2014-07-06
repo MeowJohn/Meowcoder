@@ -29,5 +29,10 @@ meow.meowcoder.Lang = function () {
     return 'me';
   };
 
+};
 
-}
+meow.meowcoder.lang = new meow.meowcoder.Lang();
+meow.meowcoder.lang.assignEnglishToMeow ( 'a', 'me' );
+meow.meowcoder.lang.assignEnglishToMeow ( 'b', 'mr' );
+meow.meowcoder.lang.assignEnglishToMeow ( 'c', 'wa' );
+meow.meowcoder.lang.assignEnglishToMeow ( 'd', 'wo' );
