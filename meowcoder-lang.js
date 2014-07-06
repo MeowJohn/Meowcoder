@@ -8,3 +8,4 @@ meow.meowcoder.Lang = function () {
   _this.assignEnglishToMeow = function (_english, _meow) {
     
   }
+}
