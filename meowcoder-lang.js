@@ -11,4 +11,5 @@ meow.meowcoder.Lang = function () {
     _definition.english = _english;
     _definition.meow = _meow;
    _dictionary.push (_definiton);
+  }
 }
