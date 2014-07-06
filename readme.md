@@ -10,10 +10,14 @@ by Megan John and Ben John
 
 To-Do List
 ----------
-
+- Define the meow language
 - Write markup
   - IDs of the interactive controls are defined in the app file
 - Write stylesheet
+
+Advanced To-Do List
+-------------------
+
 - Rewrite meow.meowcoder.Lang as a constructor
   - One instance, meow.meowcoder.lang
   - Five public methods,
