@@ -9,6 +9,8 @@ meow.meowcoder.App = function ( ) {
   
   _encodeButton.onclick = _encodeNow;
   _decodeButton.onclick = _decodeNow;
+
+  _showCatPun ( );
   
   function _encodeNow ( ) {
     var _encoder;
@@ -22,6 +24,23 @@ meow.meowcoder.App = function ( ) {
     _decoder = new meowcoder.meow.Decoder();
     _decoder.setText ( _textToTranslateField.val );
     _resultField.val = _encoder.getTranslation ();
+  }
+  
+  function _showCatPun ( ) {
+    var catPuns, catPunNumber, myCatPun;
+    catPuns = [];
+    catPuns[0] = "We\'re not kitten.";
+    catPuns[1] = "Send the lynx to all your friends.";
+    catPuns[2] = "I hope you\'re feline up to this.";
+    catPuns[3] = "For when you need it right meow.";
+    catPuns[4] = "The purrfect solution to all your encoding needs."
+    catPuns[5] = "The accuracy of it freaks meowt!"
+    catPuns[6] = "Paws and consider the beauty of it."
+    catPuns[7] = "Promoting litter-acy in the cat language since 2014"
+    catPuns[8] = "Our Purr-pose is to help you translate."
+    catPunNumber = parseInt (Math.random() * ( catPuns.length - 1))
+    myCatPun = catPuns[catPunNumber];
+    document.getElementById ( 'cat-pun' ).innerHTML = myCatPun;
   }
   
 };
